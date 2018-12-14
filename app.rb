@@ -17,6 +17,6 @@ end
 
 post '/tweet' do  
     @sentence = params[:yaruzo]
-    client.update("")
+    client.update(@sentence)
     redirect '/'
 end
